@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout>
+
+    <div class="pb-12 mt-5">
+      <div class="text-xl py-1">Hola 👋</div>
+      <div class="text-5xl font-bold">Soy Milton Baltazar</div>
+      <div class="text-3xl py-3 font-bold">Consultor, Arquitecto TI, Software Developer y Autor</div>
+      <div class="py-2">
+        <text class="text-lg">
+          Soy de Lima - Perú, mi pasión es la tecnología y el desarrollo de software. Tengo amplia experiencia en la creación de soluciones innovadoras y eficaces para empresas de todo tamaño. Sígueme en mis redes sociales para conocer mis publicaciones y proyectos. 
+          </text>
+      </div>
+    </div>
+    <div>
+      <div class="text-3xl w-full font-bold mb-2">Más sobre mi: {"</>"}</div>
+    </div>
+
+    <div class="pb-2 mt-1">
+      <text class="text-lg">🔭 Actualmente trabajo como líder técnico en Automatización Robótica de Proceso (RPA)</text>
+    </div>
+
+    <div class="pb-2 mt-1">
+      <text class="text-lg">👨‍💻 Puedes revisar mis proyectos personales en <a href="https://miltonbaltazar.github.io/">github</a></text>
+    </div>  
+
+    <div class="pb-2 mt-1">
+      <text class="text-lg">📝 Regularmente escribo artículos en <a href=" https://brainybots.substack.com/">brainyBots</a></text>
+    </div>
+      
+    <div class="pb-2 mt-1">
+      <text class="text-lg">💬 Pregúntame sobre desarrollo y arquitectura de software</text>
+    </div>  
+
+    <div class="pb-2 mt-1">
+      <text class="text-lg">⚡ Me gusta la aventura</text>
+    </div>  
+
+</BaseLayout>
