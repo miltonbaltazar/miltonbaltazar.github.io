@@ -7,23 +7,23 @@
 <meta name="generator" content="Astro v2.0.5">
 
 <!-- Primary Meta Tags -->
-<title>Milton Baltazar</title>
-<meta name="title" content="Milton Baltazar">
-<meta name="description" content="Personal Website">
+<title>¿Qué es la transmisión UDP?</title>
+<meta name="title" content="¿Qué es la transmisión UDP?">
+<meta name="description" content="El protocolo User Datagram Protocol (UDP) está basado en el intercambio de datagramas. Permite el envío de datagramas a través de la red sin que se haya establecido previamente una conexión, ya que el propio datagrama incorpora suficiente información de direccionamiento en su cabecera...">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://astro-modern-personal-website.netlify.app/">
-<meta property="og:title" content="Milton Baltazar">
-<meta property="og:description" content="Personal Website">
-<meta property="og:image" content="https://astro-modern-personal-website.netlify.app/social_img.png">
+<meta property="og:url" content="https://astro-modern-personal-website.netlify.app/blog/post3/">
+<meta property="og:title" content="¿Qué es la transmisión UDP?">
+<meta property="og:description" content="El protocolo User Datagram Protocol (UDP) está basado en el intercambio de datagramas. Permite el envío de datagramas a través de la red sin que se haya establecido previamente una conexión, ya que el propio datagrama incorpora suficiente información de direccionamiento en su cabecera...">
+<meta property="og:image" content="https://astro-modern-personal-website.netlify.app/network.webp">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://astro-modern-personal-website.netlify.app/">
-<meta property="twitter:title" content="Milton Baltazar">
-<meta property="twitter:description" content="Personal Website">
-<meta property="twitter:image" content="https://astro-modern-personal-website.netlify.app/social_img.png">
+<meta property="twitter:url" content="https://astro-modern-personal-website.netlify.app/blog/post3/">
+<meta property="twitter:title" content="¿Qué es la transmisión UDP?">
+<meta property="twitter:description" content="El protocolo User Datagram Protocol (UDP) está basado en el intercambio de datagramas. Permite el envío de datagramas a través de la red sin que se haya establecido previamente una conexión, ya que el propio datagrama incorpora suficiente información de direccionamiento en su cabecera...">
+<meta property="twitter:image" content="https://astro-modern-personal-website.netlify.app/network.webp">
   <link rel="stylesheet" href="/_astro/_...page_.27de76f3.css" />
 <link rel="stylesheet" href="/_astro/_slug_.1c16ba73.css" /></head>
   <body>
@@ -46,28 +46,22 @@
 </div>
         <div class="md:flex md:justify-center">
           <main class="p-6 pt-10 max-w-[900px]">
-            <div class="pb-12 mt-5">
-      <div class="text-xl py-1">Hola 👋</div>
-      <div class="text-5xl font-bold">Soy Milton Baltazar</div>
-      <div class="text-3xl py-3 font-bold">Consultor, Arquitecto TI, Software Developer y Autor</div>
-      <div class="py-2">
-        <text class="text-lg">
-          Soy de Lima - Perú, mi pasión es la tecnología y el desarrollo de software. Tengo amplia experiencia en la creación de soluciones innovadoras y eficaces para empresas de todo tamaño. Sígueme en mis redes sociales para conocer mis publicaciones y proyectos. 
-          </text>
-      </div>
-    </div><div>
-      <div class="text-3xl w-full font-bold mb-2">Más sobre mi: &lt;/&gt;</div>
-    </div><div class="pb-2 mt-1">
-      <text class="text-lg">🔭 Actualmente trabajo como líder técnico en Automatización Robótica de Proceso (RPA)</text>
-    </div><div class="pb-2 mt-1">
-      <text class="text-lg">👨‍💻 Puedes revisar mis proyectos personales en <a href="https://miltonbaltazar.github.io/">github</a></text>
-    </div><div class="pb-2 mt-1">
-      <text class="text-lg">📝 Regularmente escribo artículos en <a href=" https://brainybots.substack.com/">brainyBots</a></text>
-    </div><div class="pb-2 mt-1">
-      <text class="text-lg">💬 Pregúntame sobre desarrollo y arquitectura de software</text>
-    </div><div class="pb-2 mt-1">
-      <text class="text-lg">⚡ Me gusta la aventura</text>
-    </div>
+            <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      <img src="/network.webp" alt="¿Qué es la transmisión UDP?" class="w-full mb-6">
+      <h1 class="title my-2 text-4xl font-bold">¿Qué es la transmisión UDP?</h1>
+      <time>Mon Sep 12 2022 00:00:00 GMT-0500 (hora estándar de Perú)</time>
+      
+      <div class="divider my-2"></div>
+        <p>El protocolo User Datagram Protocol (UDP) está basado en el intercambio de datagramas. Permite el envío de datagramas a través de la red sin que se haya establecido previamente una conexión, ya que el propio datagrama incorpora suficiente información de direccionamiento en su cabecera. Tampoco tiene confirmación ni control de flujo, por lo que los paquetes pueden adelantarse unos a otros; y tampoco se sabe si ha llegado correctamente, ya que no hay confirmación de entrega o recepción.</p>
+<p>El protocolo UTP proporciona un nivel de transporte fiable y está orientado a conexión. En cambio, el protocolo UDP, proporciona un nivel de transporte no fiable y se utiliza por ejemplo cuando se necesita transmitir voz o vídeo y resulta más importante transmitir con velocidad que garantizar el hecho de que lleguen absolutamente todos los bytes.</p>
+<p>Las características principales de este protocolo son:</p>
+<p>Trabaja sin conexión, es decir que no emplea ninguna sincronización entre el origen y el destino.
+Trabaja con paquetes o datagramas enteros, no con bytes individuales como TCP. Una aplicación que emplea el protocolo UDP intercambia información en forma de bloques de bytes, de forma que por cada bloque de bytes enviado de la capa de aplicación a la capa de transporte, se envía un paquete UDP.
+No es fiable. No emplea control del flujo ni ordena los paquetes.
+Su gran ventaja es que provoca poca carga adicional en la red ya que es sencillo y emplea cabeceras muy simples.</p>
+    </article>
+  </main>
           </main>
         </div>
         <footer class="footer footer-center block mb-5 pt-10">
