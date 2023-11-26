@@ -1,0 +1,20 @@
+---
+export interface Props {
+    category : string;
+    tags: string[];
+}
+
+const {category, tags} = Astro.props;
+---
+
+<div class="mb-5">
+    <div class="text-1xl w-full font-bold"> {category}</div>
+  </div>
+ 
+<ul class="list-disc md:columns-4 columns-2 mx-5">
+    {tags.map((tag) => (    
+        <li>{tag}</li>
+    ))}    
+  </ul>
+
+

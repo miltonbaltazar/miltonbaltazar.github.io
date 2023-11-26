@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import Skills from "../components/Skills.astro";
 ---
 
 <BaseLayout title = "Resume">
@@ -109,36 +110,23 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Automation Anywhere</li>
-    <li>UIPath</li>
-    <li>Rocketbot</li>
-    <li>Python</li>
-    <li>C#</li>
-    <li>Visual Basic .NET</li>
-    <li>Java</li>    
-    <li>PHP</li>
-    <li>Oracle</li>
-    <li>Postgres SQL</li>
-    <li>MySQL</li>
-    <li>SQL Server</li>
-    <li>UML</li>
-    <li>IDEF0</li>
-    <li>C4</li>
-    <li>ETL, Reporting Services</li>
-    <li>Herramientas case</li>
-    <li>Scrum</li>
-    <li>Kanban</li>
-    <li>VUE</li>
-    <li>Astro</li>
-    <li>Bootstrap</li>
-    <li>Wordpress</li>
-    <li>Git</li>
-    <li>Jira</li>
-    <li>Trello</li>
-    <li>UI Design</li>
-    <li>WEB Design</li>
-    <li>Office Suite</li>
-  </ul>
+  <div class="time-line-container mb-10">
+    <Skills category="Automatización/Low-Code" tags={["Power Platform","Automation Anywhere","UIPath","Rocketbot"]}>
+    </Skills>
+    <Skills category="Backend" tags={["Python","C#", "Visual Basic .NET", "Java","PHP"]}>
+    </Skills>
+    <Skills category="DataBase" tags={["Oracle","Postgres SQL","MySQL","SQL Server", "VUE"]}>
+    </Skills>
+    <Skills category="Software Life Cycle" tags={["Technical Design Document (TDD)","Arquitectura de Software"]}>
+    </Skills>  
+    <Skills category="Business Analyst" tags={["BPMN","UML","IDEF0","C4","Process Design Document (PDD)",]}>
+    </Skills>
+    <Skills category="Big Data" tags={["SQL Server Integration Service (SSIS)","SQL Server Reporting Services (SSRS)"]}>
+    </Skills>
+    <Skills category="Agile" tags={["Metodologias Ágiles","Scrum","Kanban","Jira","Trello"]}>
+    </Skills>
+    <Skills category="Frontend" tags={["VUE","Astro","Bootstrap","Wordpress","Git","UI Design","WEB Design","Office Suite"]}>
+    </Skills>    
+  </div>
+ 
 </BaseLayout>

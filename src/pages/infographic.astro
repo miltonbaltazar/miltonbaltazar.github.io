@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InfographicCard from "../components/InfographicItem.astro";
+
+
+const allInfographics = await Astro.glob("../content/infographic/*.md");
+---
+
+<BaseLayout title = "infographic">
+
+    <!--List the array of astronaut info-->
+    {allInfographics.map(( infog ) => (
+     <InfographicCard
+        title={infog?.frontmatter?.title}
+        img={infog?.frontmatter?.heroImage}
+        desc={infog?.frontmatter?.description}
+        tags={["inteligencia artificial", "machine learning"]}
+      />
+    ))}
+</BaseLayout>
